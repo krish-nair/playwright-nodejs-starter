@@ -1,0 +1,123 @@
+{
+  "config": {
+    "configFile": "D:\\MyProjects\\playwright\\playwright-nodejs-starter\\playwright.config.ts",
+    "rootDir": "D:/MyProjects/playwright/playwright-nodejs-starter/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReports.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/MyProjects/playwright/playwright-nodejs-starter/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "D:/MyProjects/playwright/playwright-nodejs-starter/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/m2-setup/locators_filters.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.48.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "m2-setup\\locators_filters.test.ts",
+      "file": "m2-setup/locators_filters.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Filtering demo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 5475,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "3\n"
+                    },
+                    {
+                      "text": "\n                            Us\n                            4%\n                            5%\n                            6%\n                        \n"
+                    },
+                    {
+                      "text": "5%\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-11-14T08:48:11.197Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c52bbc00b2d5fc613a8f-478c15a62fdbc4e4e2bf",
+          "file": "m2-setup/locators_filters.test.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-11-14T08:48:09.831Z",
+    "duration": 13424.288,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
