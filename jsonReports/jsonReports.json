@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "D:\\MyProjects\\playwright\\playwright-nodejs-starter\\playwright.config.ts",
-    "rootDir": "D:/MyProjects/playwright/playwright-nodejs-starter/tests",
+    "configFile": "C:\\Users\\NairK\\OneDrive - education.govt.nz\\Documents\\Krishnan\\playwright-nodejs\\playwright-nodejs-starter\\playwright.config.ts",
+    "rootDir": "C:/Users/NairK/OneDrive - education.govt.nz/Documents/Krishnan/playwright-nodejs/playwright-nodejs-starter/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -39,13 +39,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "D:/MyProjects/playwright/playwright-nodejs-starter/test-results",
+        "outputDir": "C:/Users/NairK/OneDrive - education.govt.nz/Documents/Krishnan/playwright-nodejs/playwright-nodejs-starter/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "",
         "name": "",
-        "testDir": "D:/MyProjects/playwright/playwright-nodejs-starter/tests",
+        "testDir": "C:/Users/NairK/OneDrive - education.govt.nz/Documents/Krishnan/playwright-nodejs/playwright-nodejs-starter/tests",
         "testIgnore": [],
         "testMatch": [
           "tests/m2-setup/locators_filters.test.ts"
@@ -56,7 +56,7 @@
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.48.2",
-    "workers": 1,
+    "workers": 4,
     "webServer": null
   },
   "suites": [
@@ -81,11 +81,11 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 5475,
+                  "duration": 1516,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "3\n"
+                      "text": "\u001b[33m3\u001b[39m\n"
                     },
                     {
                       "text": "\n                            Us\n                            4%\n                            5%\n                            6%\n                        \n"
@@ -96,7 +96,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-11-14T08:48:11.197Z",
+                  "startTime": "2024-11-14T22:22:37.406Z",
                   "attachments": []
                 }
               ],
@@ -113,8 +113,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-11-14T08:48:09.831Z",
-    "duration": 13424.288,
+    "startTime": "2024-11-14T22:22:36.889Z",
+    "duration": 2942.539,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
