@@ -48,7 +48,7 @@
         "testDir": "C:/Users/NairK/OneDrive - education.govt.nz/Documents/Krishnan/playwright-nodejs/playwright-nodejs-starter/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/m2-setup/locators_filters.test.ts"
+          "tests/m2-setup/select.test.ts"
         ],
         "timeout": 30000
       }
@@ -61,13 +61,13 @@
   },
   "suites": [
     {
-      "title": "m2-setup\\locators_filters.test.ts",
-      "file": "m2-setup/locators_filters.test.ts",
+      "title": "m2-setup\\select.test.ts",
+      "file": "m2-setup/select.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Filtering demo",
+          "title": "Select demo",
           "ok": true,
           "tags": [],
           "tests": [
@@ -81,30 +81,20 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1516,
+                  "duration": 5510,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "\u001b[33m3\u001b[39m\n"
-                    },
-                    {
-                      "text": "\n                            Us\n                            4%\n                            5%\n                            6%\n                        \n"
-                    },
-                    {
-                      "text": "5%\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-11-14T22:22:37.406Z",
+                  "startTime": "2024-11-15T04:07:24.072Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "c52bbc00b2d5fc613a8f-478c15a62fdbc4e4e2bf",
-          "file": "m2-setup/locators_filters.test.ts",
+          "id": "f09632fcf9aee1c30118-542e5580f30a44284cfe",
+          "file": "m2-setup/select.test.ts",
           "line": 3,
           "column": 5
         }
@@ -113,8 +103,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-11-14T22:22:36.889Z",
-    "duration": 2942.539,
+    "startTime": "2024-11-15T04:07:23.481Z",
+    "duration": 6647.981,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
