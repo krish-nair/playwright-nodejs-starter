@@ -17,3 +17,29 @@ test('Select demo', async ({ page }) => {
 
     await expect(result).toContainText("After 2 Years you will earn $12.00 on your deposit");
 });
+
+test.only("Finding numbers starting with one in an array", async ({page}) => {
+    const numberArray = [1, 24, 45, 125, 178, 245, 119];
+    console.log(getNumbersList(numberArray));
+
+
+});
+
+function getFirstDigit(num: number): number {
+    while(num >= 10){
+        num = Math.floor(num/10);
+    }
+    return num;
+}
+
+function getNumbersList(arr: number[]): number[]{
+    const numbers: number[] = [];
+
+    for(const num of arr){
+        const firstDigit = getFirstDigit(num);
+        if(firstDigit == 1){
+            numbers.push(num);
+        }
+    }
+    return numbers;
+}

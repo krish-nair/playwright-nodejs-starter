@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\NairK\\OneDrive - education.govt.nz\\Documents\\Krishnan\\playwright-nodejs\\playwright-nodejs-starter\\playwright.config.ts",
-    "rootDir": "C:/Users/NairK/OneDrive - education.govt.nz/Documents/Krishnan/playwright-nodejs/playwright-nodejs-starter/tests",
+    "configFile": "D:\\MyProjects\\playwright\\playwright-nodejs-starter\\playwright.config.ts",
+    "rootDir": "D:/MyProjects/playwright/playwright-nodejs-starter/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -39,13 +39,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/NairK/OneDrive - education.govt.nz/Documents/Krishnan/playwright-nodejs/playwright-nodejs-starter/test-results",
+        "outputDir": "D:/MyProjects/playwright/playwright-nodejs-starter/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "",
         "name": "",
-        "testDir": "C:/Users/NairK/OneDrive - education.govt.nz/Documents/Krishnan/playwright-nodejs/playwright-nodejs-starter/tests",
+        "testDir": "D:/MyProjects/playwright/playwright-nodejs-starter/tests",
         "testIgnore": [],
         "testMatch": [
           "tests/m2-setup/select.test.ts"
@@ -56,7 +56,7 @@
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.48.2",
-    "workers": 4,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
@@ -67,7 +67,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Select demo",
+          "title": "Finding numbers starting with one in an array",
           "ok": true,
           "tags": [],
           "tests": [
@@ -81,30 +81,34 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 5510,
+                  "duration": 945,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "[ 1, 125, 178, 119 ]\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-11-15T04:07:24.072Z",
+                  "startTime": "2024-11-16T03:53:55.927Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "f09632fcf9aee1c30118-542e5580f30a44284cfe",
+          "id": "f09632fcf9aee1c30118-25f3f8c2fec0eb1abbf8",
           "file": "m2-setup/select.test.ts",
-          "line": 3,
-          "column": 5
+          "line": 21,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-11-15T04:07:23.481Z",
-    "duration": 6647.981,
+    "startTime": "2024-11-16T03:53:54.683Z",
+    "duration": 6572.618,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
