@@ -48,7 +48,7 @@
         "testDir": "D:/MyProjects/playwright/playwright-nodejs-starter/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/m2-setup/download.test.ts"
+          "tests/m2-setup/uploadFile.test.ts"
         ],
         "timeout": 30000
       }
@@ -61,13 +61,13 @@
   },
   "suites": [
     {
-      "title": "m2-setup\\select.test.ts",
-      "file": "m2-setup/select.test.ts",
+      "title": "m2-setup\\uploadFile.test.ts",
+      "file": "m2-setup/uploadFile.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Select demo",
+          "title": "Upload a file demo",
           "ok": true,
           "tags": [],
           "tests": [
@@ -81,20 +81,20 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 5510,
+                  "duration": 6977,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-11-15T04:07:24.072Z",
+                  "startTime": "2024-12-04T09:30:16.607Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "f09632fcf9aee1c30118-542e5580f30a44284cfe",
-          "file": "m2-setup/select.test.ts",
+          "id": "0c45dd7b3da6112a766a-046ceb55b671142ec922",
+          "file": "m2-setup/uploadFile.test.ts",
           "line": 3,
           "column": 5
         }
@@ -103,8 +103,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-11-15T04:07:23.481Z",
-    "duration": 6647.981,
+    "startTime": "2024-12-04T09:30:15.594Z",
+    "duration": 10323.802,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

@@ -2,7 +2,7 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   fullyParallel: true,
-  testMatch: ["tests/m2-setup/download.test.ts"],
+  testMatch: ["tests/m2-setup/uploadFile.test.ts"],
   testDir: './tests',
   reporter: [["dot"], ["json", {
     outputFile: "jsonReports/jsonReports.json"
@@ -10,7 +10,7 @@ export default defineConfig({
     open: "never"
 }]],
   use: {
-    // headless: false,
+    headless: false,
     baseURL: "http://localhost:3000/",
     launchOptions: {
       slowMo: 1000
