@@ -48,7 +48,7 @@
         "testDir": "D:/MyProjects/playwright/playwright-nodejs-starter/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/m2-setup/uploadFile.test.ts"
+          "tests/m2-setup/individualAnnotations.test.ts"
         ],
         "timeout": 30000
       }
@@ -61,52 +61,281 @@
   },
   "suites": [
     {
-      "title": "m2-setup\\uploadFile.test.ts",
-      "file": "m2-setup/uploadFile.test.ts",
+      "title": "m2-setup\\individualAnnotations.test.ts",
+      "file": "m2-setup/individualAnnotations.test.ts",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Upload a file demo",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "Describe demo",
+          "file": "m2-setup/individualAnnotations.test.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
+              "title": "Skipping a test",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 6977,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-12-04T09:30:16.607Z",
-                  "attachments": []
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-12-08T08:37:15.788Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
                 }
               ],
-              "status": "expected"
+              "id": "83133c8ab62a81de2753-e60cd2f8c7a1092edf9f",
+              "file": "m2-setup/individualAnnotations.test.ts",
+              "line": 9,
+              "column": 8
+            },
+            {
+              "title": "skip demo",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "fail"
+                    }
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 1048,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at D:\\MyProjects\\playwright\\playwright-nodejs-starter\\tests\\m2-setup\\individualAnnotations.test.ts:14:15",
+                        "location": {
+                          "file": "D:\\MyProjects\\playwright\\playwright-nodejs-starter\\tests\\m2-setup\\individualAnnotations.test.ts",
+                          "column": 15,
+                          "line": 14
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mfail(\u001b[32m\"skip demo\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     expect(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtoEqual(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m   test(\u001b[32m\"Conditional skip demo\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m browserName }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\MyProjects\\playwright\\playwright-nodejs-starter\\tests\\m2-setup\\individualAnnotations.test.ts",
+                            "column": 15,
+                            "line": 14
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mfail(\u001b[32m\"skip demo\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     expect(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtoEqual(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m   test(\u001b[32m\"Conditional skip demo\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m browserName }) \u001b[33m=>\u001b[39m {\u001b[0m\n\n\u001b[2m    at D:\\MyProjects\\playwright\\playwright-nodejs-starter\\tests\\m2-setup\\individualAnnotations.test.ts:14:15\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-12-08T08:37:16.750Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "D:\\MyProjects\\playwright\\playwright-nodejs-starter\\tests\\m2-setup\\individualAnnotations.test.ts",
+                        "column": 15,
+                        "line": 14
+                      }
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "83133c8ab62a81de2753-0c81e912b4fa3f66b29b",
+              "file": "m2-setup/individualAnnotations.test.ts",
+              "line": 13,
+              "column": 8
+            },
+            {
+              "title": "Conditional skip demo",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "skipped because div with class name demo is not present.."
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "skipped",
+                      "duration": 905,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-12-08T08:37:18.247Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "83133c8ab62a81de2753-037a228a05266e3c155e",
+              "file": "m2-setup/individualAnnotations.test.ts",
+              "line": 17,
+              "column": 7
             }
-          ],
-          "id": "0c45dd7b3da6112a766a-046ceb55b671142ec922",
-          "file": "m2-setup/uploadFile.test.ts",
-          "line": 3,
-          "column": 5
+          ]
+        },
+        {
+          "title": "conditional Describe demo",
+          "file": "m2-setup/individualAnnotations.test.ts",
+          "line": 26,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Skipping a test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Optional message!"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "skipped",
+                      "duration": 1313,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-12-08T08:37:19.198Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "83133c8ab62a81de2753-a71b8e1a120cd037c735",
+              "file": "m2-setup/individualAnnotations.test.ts",
+              "line": 28,
+              "column": 9
+            },
+            {
+              "title": "skip demo",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Optional message!"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "skipped",
+                      "duration": 698,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-12-08T08:37:20.550Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "83133c8ab62a81de2753-d9cb2ac990479eac402e",
+              "file": "m2-setup/individualAnnotations.test.ts",
+              "line": 32,
+              "column": 9
+            },
+            {
+              "title": "Conditional skip demo",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Optional message!"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "skipped",
+                      "duration": 810,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-12-08T08:37:21.273Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "83133c8ab62a81de2753-6fa92d5e4bec9efdd640",
+              "file": "m2-setup/individualAnnotations.test.ts",
+              "line": 36,
+              "column": 9
+            }
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-12-04T09:30:15.594Z",
-    "duration": 10323.802,
+    "startTime": "2024-12-08T08:37:15.529Z",
+    "duration": 8923.584,
     "expected": 1,
-    "skipped": 0,
+    "skipped": 5,
     "unexpected": 0,
     "flaky": 0
   }

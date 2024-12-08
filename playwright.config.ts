@@ -2,7 +2,7 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   fullyParallel: true,
-  testMatch: ["tests/m2-setup/uploadFile.test.ts"],
+  testMatch: ["tests/m2-setup/individualAnnotations.test.ts"],
   testDir: './tests',
   reporter: [["dot"], ["json", {
     outputFile: "jsonReports/jsonReports.json"
